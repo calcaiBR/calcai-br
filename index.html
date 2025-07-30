@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Loja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Minha Loja</h1>
+    <button id="carrinho-btn">Carrinho (<span id="contador-carrinho">0</span>)</button>
+  </header>
+
+  <main>
+    <div class="produto">
+      <img src="https://via.placeholder.com/300x200" alt="Sapatênis Masculino" />
+      <h2>Sapatênis Masculino</h2>
+      <p>R$ 50,00</p>
+      <p>Cores: Azul, Cinza, Marrom</p>
+      <p>Tamanhos: 37 ao 44</p>
+      <button onclick="adicionarCarrinho('Sapatênis Masculino', 50)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/300x200" alt="Tênis Feminino Casual" />
+      <h2>Tênis Feminino Casual</h2>
+      <p>R$ 60,00</p>
+      <p>Cor: Branco</p>
+      <p>Tamanhos: 33 ao 40</p>
+      <button onclick="adicionarCarrinho('Tênis Feminino Casual', 60)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/300x200" alt="Slip On" />
+      <h2>Slip On</h2>
+      <p>R$ 55,00</p>
+      <p>Cores: Branco, Bege, Preto</p>
+      <p>Tamanhos: 33 ao 40</p>
+      <button onclick="adicionarCarrinho('Slip On', 55)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/300x200" alt="Tênis Feminino Casual 2" />
+      <h2>Tênis Feminino Casual</h2>
+      <p>R$ 55,00</p>
+      <p>Cores: Branco, Bege, Preto</p>
+      <p>Tamanhos: 33 ao 40</p>
+      <button onclick="adicionarCarrinho('Tênis Feminino Casual (variação)', 55)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/300x200" alt="Tênis Masculino" />
+      <h2>Tênis Masculino</h2>
+      <p>R$ 70,00</p>
+      <p>Cores: Branco, Cinza, Bege</p>
+      <p>Tamanhos: 37 ao 44</p>
+      <button onclick="adicionarCarrinho('Tênis Masculino', 70)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/300x200" alt="Chinelo Feminino" />
+      <h2>Chinelo Feminino</h2>
+      <p>R$ 30,00</p>
+      <p>Cores: Rosa, Laranja, Preto, Bege, Verde</p>
+      <p>Tamanhos: 33 ao 40</p>
+      <button onclick="adicionarCarrinho('Chinelo Feminino', 30)">Adicionar</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="entrega">
+      <label>CEP:<br>
+        <input id="cep" maxlength="9" placeholder="Digite o CEP" />
+      </label>
+      <p id="endereco-cep"></p>
+      <p id="frete-estimado"></p>
+    </div>
+    <button id="finalizar">Finalizar Pedido via WhatsApp</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
